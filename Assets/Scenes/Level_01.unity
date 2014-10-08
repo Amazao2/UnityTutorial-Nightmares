@@ -987,6 +987,22 @@ Prefab:
       propertyPath: rifleReload
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 1146113942}
+    - target: {fileID: 11400006, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
+      propertyPath: gunBarrelEnd
+      value: 
+      objectReference: {fileID: 2138132673}
+    - target: {fileID: 11400006, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
+      propertyPath: godlikeRifleReload
+      value: .150000006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
   m_RootGameObject: {fileID: 1146113936}
@@ -2898,6 +2914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shield: {fileID: 1146113942}
+  gunBarrelEnd: {fileID: 2138132673}
+  godlikeShotgunReload: .25
+  godlikeRifleReload: .150000006
 --- !u!1 &1200756391
 GameObject:
   m_ObjectHideFlags: 0
