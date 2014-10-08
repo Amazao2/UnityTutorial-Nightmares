@@ -969,7 +969,7 @@ Prefab:
       objectReference: {fileID: 278932091}
     - target: {fileID: 11400004, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
       propertyPath: shotgunReload
-      value: .75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
       propertyPath: isShotgun
@@ -981,11 +981,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
       propertyPath: rifleDamage
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
       propertyPath: rifleReload
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: 5b7af8cd713cbe84cb3952b4b7ea519a, type: 2}
       propertyPath: m_IsKinematic
@@ -6016,9 +6016,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineWidthOverride: .0500000007
   isShotgun: 0
-  rifleDamage: 100
-  rifleReload: .5
+  rifleDamage: 50
+  rifleReload: .25
   rifleRange: 100
   shotgunDamage: 2
-  shotgunReload: .75
+  shotgunReload: 1
   shotgunRange: 10

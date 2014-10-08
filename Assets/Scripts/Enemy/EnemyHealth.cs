@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     AudioSource enemyAudio;
     ParticleSystem hitParticles;
     CapsuleCollider capsuleCollider;
+    SphereCollider sphereCollider;
     bool isDead;
     bool isSinking;
 
@@ -23,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio = GetComponent <AudioSource> ();
         hitParticles = GetComponentInChildren <ParticleSystem> ();
         capsuleCollider = GetComponent <CapsuleCollider> ();
+        sphereCollider = GetComponent<SphereCollider>();
 
         currentHealth = startingHealth;
     }
@@ -61,6 +63,9 @@ public class EnemyHealth : MonoBehaviour
         isDead = true;
 
         capsuleCollider.isTrigger = true;
+
+        capsuleCollider.enabled = false; // don't block the shots once it's dead
+        sphereCollider.enabled = false; // don't block the shots once it's dead
 
         anim.SetTrigger ("Dead");
 
